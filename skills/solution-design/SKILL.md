@@ -1,7 +1,9 @@
 ---
 name: solution-design
-description: Design solution architecture - create design docs, system diagrams, technical specifications, implementation plans. Dùng khi designing systems, creating architecture, hay planning technical approach.
-allowed-tools: Read, Write, Grep
+description: Design solution architecture - conduct parallel research (market, competitive, technical, user), create design docs, system diagrams, technical specifications, implementation plans. Use when designing systems, creating architecture, conducting design research, or planning technical approach.
+allowed-tools: Read, Write, Grep, Bash
+context: fork
+agent: Explore
 argument-hint: [requirements-file] [system-name]
 user-invocable: true
 ---
@@ -10,6 +12,87 @@ user-invocable: true
 
 Create solution design for requirements: `$0`
 System/Project name: `$1`
+
+## Phase 0: Parallel Research (NEW)
+
+Before designing, conduct research across 4 parallel tracks for comprehensive understanding:
+
+### **Research Track 1: Market Research**
+
+Understand market context:
+- **Market Size**: TAM (Total Addressable Market), SAM (Serviceable Available Market)
+- **Trends**: Industry trends, emerging technologies, market direction
+- **Competitive Landscape**: Existing solutions, competitor features, market gaps
+- **Regulatory/Compliance**: Any regulatory constraints or compliance requirements
+
+**Output**:
+- Market opportunity assessment
+- Competitive positioning matrix
+- Regulatory/compliance checklist
+
+---
+
+### **Research Track 2: Competitive Analysis**
+
+Deep dive on competitive landscape:
+- **Direct Competitors**: Who solves this problem today?
+- **Feature Comparison**: What features do they offer?
+- **Competitive Advantage**: What can we do better/differently?
+- **Market Positioning**: How do we position against them?
+- **Gaps & Opportunities**: What's missing in market?
+
+**Output**:
+- Competitive feature matrix
+- Positioning strategy
+- Opportunity identification
+
+---
+
+### **Research Track 3: Technical Feasibility**
+
+Evaluate technical approach:
+- **Technology Options**: What tech stacks are available?
+- **Scalability Assessment**: Can we scale to required load?
+- **Technical Risks**: What are technical risks/constraints?
+- **Resource Requirements**: What skills/resources needed?
+- **Timeline Realism**: Is timeline achievable?
+
+**Output**:
+- Technology options evaluation
+- Risk assessment
+- Resource plan
+- Effort estimation
+
+---
+
+### **Research Track 4: User Needs & Validation**
+
+Validate design against user needs:
+- **User Research**: What do users actually need?
+- **Use Cases**: What are primary use cases?
+- **User Feedback**: Any design feedback from users?
+- **Adoption Risk**: What could prevent adoption?
+- **Success Metrics**: How do users define success?
+
+**Output**:
+- User research findings
+- Use case documentation
+- Adoption risk mitigation
+- Success metrics definition
+
+---
+
+### **Integration: Research Findings into Design**
+
+After completing 4 parallel research tracks:
+1. Synthesize findings across tracks
+2. Identify conflicts/dependencies between tracks
+3. Validate design decisions against research
+4. Document assumptions and validations
+5. Highlight risks identified in research
+6. Plan mitigation strategies
+
+---
 
 ## Design Document Structure
 
