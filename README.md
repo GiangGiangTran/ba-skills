@@ -4,7 +4,7 @@
 [![Claude Code Compatible](https://img.shields.io/badge/Claude%20Code-Compatible-blue)](https://claude.com/claude-code)
 [![Version](https://img.shields.io/badge/version-1.0-green)](https://github.com/your-username/ba-skills/releases)
 
-A comprehensive suite of **5 professional Business Analyst skills** for Claude Code, designed to help AI engineers and technical leaders act as experienced BAs. Includes frameworks, templates, and workflows based on BABOK, PMBOK, and IEEE standards.
+A comprehensive suite of **13 professional Business Analysis skills** for Claude Code - teaching core competencies, domain knowledge, and document processing techniques. Not a workflow tool. A learning suite for becoming a skilled BA.
 
 ---
 
@@ -14,24 +14,44 @@ This skill set transforms you into a **professional Business Analyst** with mult
 
 ### ✨ Key Features
 
-- ✅ **5 Professional Skills**: Document review, requirement analysis, solution design, risk assessment, stakeholder mapping
+- ✅ **13 Professional Skills**: 4 core competencies + 5 domain knowledge + 4 document processing skills
+- ✅ **Skills Not Workflows**: Teach what BAs need to know, not how to run projects
 - ✅ **Enterprise Frameworks**: Based on BABOK, PMBOK, IEEE 830, ISO 31000
-- ✅ **Reusable Templates**: Copy-paste ready for any project
-- ✅ **Zero Configuration**: Works out of the box with Claude Code
-- ✅ **Production Ready**: Used in enterprise projects
-- ✅ **Fully Customizable**: Modify for your standards and preferences
+- ✅ **Reusable Templates & References**: Each skill includes detailed frameworks and templates
+- ✅ **Context Optimized**: <15K total tokens - efficient and modular
+- ✅ **Production Ready**: Designed for real-world use
 
 ---
 
-## 📋 The 5 Skills
+## 📋 The 13 Skills
+
+### **Core Competencies (4)** - What BAs *Do*
 
 | Skill | Purpose | Use When |
 |-------|---------|----------|
-| **document-review** | Validate BA documents for clarity, completeness, traceability | Reviewing requirements, design docs, analysis documents |
-| **requirement-analysis** | Analyze, prioritize, and estimate requirements | Planning projects, prioritizing features, breaking down scope |
-| **solution-design** | Create complete design documentation and architecture | Designing systems, planning implementation, tech stack decisions |
-| **risk-assessment** | Identify and mitigate project risks | Planning projects, identifying risks, creating contingency plans |
-| **stakeholder-mapping** | Plan stakeholder engagement and communication | Planning engagement, analyzing stakeholders, change management |
+| `/critical-thinking` | Analyze problems logically, find root causes | Analyzing complex problems, testing assumptions |
+| `/stakeholder-management` | Engage stakeholders, manage conflicts | Planning engagement, navigating competing interests |
+| `/data-analysis` | Collect, analyze, interpret data | Supporting decisions with evidence |
+| `/communication` | Write clearly, present persuasively | Documenting requirements, presenting findings |
+
+### **Domain Knowledge (5)** - What BAs *Know*
+
+| Skill | Purpose | Use When |
+|-------|---------|----------|
+| `/business-fundamentals` | Understand business models, unit economics, ROI | Evaluating business cases, prioritizing by value |
+| `/technical-basics` | Understand architecture, scalability, trade-offs | Assessing feasibility, discussing with engineers |
+| `/user-psychology` | Understand decision-making, motivation, adoption | Designing for users, reducing friction |
+| `/market-dynamics` | Competitive landscape, positioning, trends | Evaluating opportunities, understanding market |
+| `/compliance-risk` | Regulatory, security, risk mitigation | Identifying compliance, assessing risks |
+
+### **Document Processing (4)** - How BAs *Work with Information*
+
+| Skill | Purpose | Use When |
+|-------|---------|----------|
+| `/doc-synthesis` | Summarize, extract insights, create executive summaries | Condensing information for audiences |
+| `/pattern-recognition` | Find patterns, outliers, trends in data | Analyzing interviews, feedback, metrics |
+| `/assumption-validation` | Test hidden assumptions, find contradictions | Validating risky assumptions before commitment |
+| `/insight-extraction` | Dig deeper, find root causes, opportunities | Deeper analysis, breakthrough understanding |
 
 ---
 
@@ -469,11 +489,12 @@ Built on frameworks from:
 
 ## 📊 Stats
 
-- **Skills**: 5 professional BA skills
-- **Templates**: 4 reusable templates
-- **Documentation**: 2000+ lines
+- **Skills**: 13 professional BA skills (4 core + 5 domain + 4 document processing)
+- **Total Context**: <15K tokens (efficient, modular)
+- **References**: 40+ detailed frameworks
+- **Templates**: 50+ reusable templates & worksheets
+- **Documentation**: 5000+ lines
 - **Standards**: 5 (BABOK, PMBOK, IEEE 830, ISO 31000, Agile)
-- **Use Cases**: 50+
 - **Status**: Production Ready ✅
 
 ---
