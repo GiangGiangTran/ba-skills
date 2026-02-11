@@ -13,84 +13,19 @@ user-invocable: true
 Create solution design for requirements: `$0`
 System/Project name: `$1`
 
-## Phase 0: Parallel Research (NEW)
+## Phase 0: Parallel Research (Optional)
 
-Before designing, conduct research across 4 parallel tracks for comprehensive understanding:
+Before designing, optionally conduct research across 4 parallel tracks:
 
-### **Research Track 1: Market Research**
+**4 Research Tracks**:
+1. **Market Research**: Market size (TAM/SAM), trends, regulations
+2. **Competitive Analysis**: Competitors, features, positioning, gaps
+3. **Technical Feasibility**: Tech options, scalability, risks
+4. **User Needs**: User research, use cases, adoption risks
 
-Understand market context:
-- **Market Size**: TAM (Total Addressable Market), SAM (Serviceable Available Market)
-- **Trends**: Industry trends, emerging technologies, market direction
-- **Competitive Landscape**: Existing solutions, competitor features, market gaps
-- **Regulatory/Compliance**: Any regulatory constraints or compliance requirements
+**Integration**: Synthesize findings → inform design decisions
 
-**Output**:
-- Market opportunity assessment
-- Competitive positioning matrix
-- Regulatory/compliance checklist
-
----
-
-### **Research Track 2: Competitive Analysis**
-
-Deep dive on competitive landscape:
-- **Direct Competitors**: Who solves this problem today?
-- **Feature Comparison**: What features do they offer?
-- **Competitive Advantage**: What can we do better/differently?
-- **Market Positioning**: How do we position against them?
-- **Gaps & Opportunities**: What's missing in market?
-
-**Output**:
-- Competitive feature matrix
-- Positioning strategy
-- Opportunity identification
-
----
-
-### **Research Track 3: Technical Feasibility**
-
-Evaluate technical approach:
-- **Technology Options**: What tech stacks are available?
-- **Scalability Assessment**: Can we scale to required load?
-- **Technical Risks**: What are technical risks/constraints?
-- **Resource Requirements**: What skills/resources needed?
-- **Timeline Realism**: Is timeline achievable?
-
-**Output**:
-- Technology options evaluation
-- Risk assessment
-- Resource plan
-- Effort estimation
-
----
-
-### **Research Track 4: User Needs & Validation**
-
-Validate design against user needs:
-- **User Research**: What do users actually need?
-- **Use Cases**: What are primary use cases?
-- **User Feedback**: Any design feedback from users?
-- **Adoption Risk**: What could prevent adoption?
-- **Success Metrics**: How do users define success?
-
-**Output**:
-- User research findings
-- Use case documentation
-- Adoption risk mitigation
-- Success metrics definition
-
----
-
-### **Integration: Research Findings into Design**
-
-After completing 4 parallel research tracks:
-1. Synthesize findings across tracks
-2. Identify conflicts/dependencies between tracks
-3. Validate design decisions against research
-4. Document assumptions and validations
-5. Highlight risks identified in research
-6. Plan mitigation strategies
+**See references/parallel-research-guide.md for detailed framework**
 
 ---
 
@@ -105,50 +40,47 @@ After completing 4 parallel research tracks:
 - **Scope**: What's included/excluded
 - **Assumptions**: Key assumptions about the solution
 
+---
+
 ### 2. Architecture & Design
 
 **System Components**:
 - List main components/modules
 - Describe responsibility of each
-- Show component interactions (text or ASCII diagram)
+- Show component interactions (diagram or text)
 
 **Data Flow**:
 - Show data moving through system
 - Identify data stores
 - Show integration points
-- Describe data transformations
 
 **Technology Stack Rationale**:
-For each major technology choice:
 - Option A vs Option B → Chosen: C
 - Justification: Why this choice?
 - Alternatives considered
 
 **Architecture Decisions**:
-- Decision ID
-- Context: What problem does this solve?
+- Decision ID + Context
 - Options considered
-- Decision: Which option chosen?
-- Rationale: Why?
-- Consequences: What's the impact?
-- Related decisions
+- Decision taken + Rationale
+- Consequences + Related decisions
+
+---
 
 ### 3. Design Details
 
 **System Interfaces**:
 - User interfaces (sketches/description)
-- API endpoints (with methods, parameters, responses)
-- Integration interfaces (with external systems)
+- API endpoints (methods, parameters, responses)
+- Integration interfaces (external systems)
 
 **Database Design**:
 - Entity-relationship diagram (or description)
-- Key tables/collections
-- Key fields and relationships
+- Key tables/collections and relationships
 - Data consistency requirements
 
 **Security Architecture**:
-- Authentication mechanism
-- Authorization model
+- Authentication & Authorization mechanism
 - Data protection (encryption, etc.)
 - Compliance requirements
 
@@ -159,20 +91,22 @@ For each major technology choice:
 - Caching strategy
 - Database optimization
 
+---
+
 ### 4. Implementation Plan
 
 **Phases**:
 ```
 Phase 1 (Weeks 1-2): [Components to build]
-- Component A: Component A details
-- Component B: Component B details
+- Component A: description
+- Component B: description
 - Deliverables: [list]
-- Dependencies: [on what]
+- Dependencies: [list]
 
 Phase 2 (Weeks 3-4): [Next components]
-- ...
+...
 
-Phase N (Final Phase): Integration & deployment
+Phase N: Integration & deployment
 ```
 
 **Sequencing Logic**:
@@ -181,35 +115,35 @@ Phase N (Final Phase): Integration & deployment
 - Parallel work opportunities?
 - Integration points between phases?
 
+---
+
 ### 5. Risks & Mitigations
 
-| Risk | Category | Probability | Impact | Risk Score | Mitigation Strategy | Owner |
-|------|----------|-------------|--------|------------|-------------------|-------|
-| Technology unfamiliar to team | Technical | Medium | High | 8 | Training, pair programming, proof of concept | PM |
-| Third-party API availability | External | Low | Critical | 8 | Fallback strategy, offline mode, backup provider | Dev Lead |
+| Risk | Category | Probability | Impact | Mitigation |
+|------|----------|-------------|--------|-----------|
+| [Risk 1] | [Category] | [High/Med/Low] | [High/Med/Low] | [Plan] |
+| [Risk 2] | [Category] | [High/Med/Low] | [High/Med/Low] | [Plan] |
+
+---
 
 ### 6. Success Metrics & KPIs
 
 **Technical Metrics**:
-- Response time: < 500ms
-- Availability: 99.9%
-- Defect rate: < 2%
-- Test coverage: > 80%
+- Response time: < X ms
+- Availability: X% uptime
+- Defect rate: < X%
+- Test coverage: > X%
 
 **Business Metrics**:
-- User adoption: > 80% of target users
-- User satisfaction: > 4.0/5.0 stars
-- Business ROI: Achieved within X months
-- Cost savings/revenue impact: [metrics]
+- User adoption: > X%
+- User satisfaction: > X/5
+- Revenue impact: $X
+- Market share: X%
 
-**User Experience Metrics**:
-- Task completion rate: > 95%
-- Time to completion: < [target]
-- Error rate: < [target]
+---
 
 ### 7. Testing Strategy
 
-**Approach**:
 - Unit testing (component-level)
 - Integration testing (multiple components)
 - System testing (end-to-end)
@@ -217,55 +151,34 @@ Phase N (Final Phase): Integration & deployment
 - Security testing
 - User acceptance testing (UAT)
 
-**Test Coverage**:
-- Happy path (normal use cases)
-- Edge cases (boundary conditions)
-- Error scenarios (fault handling)
-- Integration scenarios (system interactions)
+---
 
 ### 8. Deployment & Rollout
 
-**Deployment Approach**:
-- Development → Staging → Production
-- Rollout strategy: Big bang, phased, canary, blue-green
-- Rollback plan: How to undo if needed
-- Communication plan: Who needs to know what
+**Approach**: Big bang / Phased / Canary / Blue-green
+
+**Rollout Strategy**:
+- Stage 1: [Date/Plan]
+- Stage 2: [Date/Plan]
+- Rollback plan: [If needed]
 
 **Post-Deployment**:
-- Monitoring plan: What to monitor
-- Support plan: How to handle issues
-- Feedback collection: How to gather user feedback
+- Monitoring plan
+- Support plan
+- Feedback collection
+
+---
 
 ### 9. Appendices
 
-- **Detailed API Specifications** (all endpoints)
+- **Detailed API Specifications**
 - **Database Schema** (DDL scripts)
 - **Security Architecture** (detailed)
 - **Disaster Recovery Plan**
-- **Operations Runbook** (how to operate the system)
+- **Operations Runbook**
 - **Known Limitations & Future Enhancements**
 
-## Design Output
-
-Provide:
-
-### 1. Executive Summary (1 page)
-Problem, approach, benefits, timeline, success criteria
-
-### 2. Architecture Overview
-High-level diagram or description of system components and interactions
-
-### 3. Design Decisions
-Key decisions with rationale and tradeoffs
-
-### 4. Implementation Roadmap
-Phase-by-phase breakdown with timeline and dependencies
-
-### 5. Risk Assessment
-Top 5 risks with mitigation strategies
-
-### 6. Appendices
-Detailed technical specifications
+---
 
 ## Usage Examples
 
@@ -275,19 +188,28 @@ Detailed technical specifications
 /solution-design features.md "Mobile App"
 ```
 
+---
+
 ## Design Principles
 
 Follow:
-- SOLID principles (for software design)
-- DRY (Don't Repeat Yourself)
-- KISS (Keep It Simple, Stupid)
-- YAGNI (You Aren't Gonna Need It)
-- Separation of Concerns
-- Loose Coupling, High Cohesion
+- **SOLID** principles (for software design)
+- **DRY** (Don't Repeat Yourself)
+- **KISS** (Keep It Simple, Stupid)
+- **YAGNI** (You Aren't Gonna Need It)
+- **Separation of Concerns**
+- **Loose Coupling, High Cohesion**
+
+---
 
 ## Standards & References
 
-- IEEE 1016: Software Design Descriptions
-- UML (Unified Modeling Language)
-- C4 Model: Context, Container, Component, Code
-- Design patterns (when applicable)
+- **IEEE 1016**: Software Design Descriptions
+- **UML**: Unified Modeling Language
+- **C4 Model**: Context, Container, Component, Code
+
+**For Phase 0 Parallel Research**:
+- 📚 `references/parallel-research-guide.md` - Detailed 4-track research framework
+
+**For Design Documentation**:
+- 📋 `assets/design-doc-template.md` - Complete design document template
