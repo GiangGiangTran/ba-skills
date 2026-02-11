@@ -2,10 +2,12 @@
 name: technical-basics
 description: "Master technical domain knowledge - understand architecture, scalability, technical constraints, trade-offs, and implications. Use for feasibility assessment, design discussions, and communicating with engineering teams."
 allowed-tools: Write
-context: fork
-agent: Explore
-argument-hint: [question-topic] [optional-context]
-user-invocable: true
+metadata:
+  version: "2.0"
+  claude-code:
+    context: fork
+    agent: Explore
+    user-invocable: true
 ---
 
 # Technical Basics for BA

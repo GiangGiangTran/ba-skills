@@ -2,10 +2,12 @@
 name: stakeholder-management
 description: "Master stakeholder engagement - identify decision-makers, manage expectations, navigate conflicts, build coalitions, communicate effectively with different audiences. Use for engaging sponsors, managing competing interests, and building stakeholder buy-in."
 allowed-tools: Write
-context: fork
-agent: Explore
-argument-hint: [project-name] [optional-context]
-user-invocable: true
+metadata:
+  version: "2.0"
+  claude-code:
+    context: fork
+    agent: Explore
+    user-invocable: true
 ---
 
 # Stakeholder Management for BA

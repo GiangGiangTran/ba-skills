@@ -2,10 +2,12 @@
 name: pattern-recognition
 description: "Master pattern recognition - identify recurring themes, outliers, trends, inconsistencies across documents and data. Use for extracting meaningful patterns from interviews, feedback, and data sets."
 allowed-tools: Read, Grep
-context: fork
-agent: Explore
-argument-hint: [data-source-type] [pattern-question]
-user-invocable: true
+metadata:
+  version: "2.0"
+  claude-code:
+    context: fork
+    agent: Explore
+    user-invocable: true
 ---
 
 # Pattern Recognition for BA

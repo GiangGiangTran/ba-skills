@@ -2,10 +2,12 @@
 name: doc-synthesis
 description: "Master document synthesis - summarize information clearly, extract key insights, create executive summaries, distill complex documents. Use for condensing information for different audiences and creating actionable summaries."
 allowed-tools: Read, Write
-context: fork
-agent: Explore
-argument-hint: [document-path] [audience-type]
-user-invocable: true
+metadata:
+  version: "2.0"
+  claude-code:
+    context: fork
+    agent: Explore
+    user-invocable: true
 ---
 
 # Document Synthesis for BA

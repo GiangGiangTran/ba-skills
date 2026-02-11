@@ -2,10 +2,12 @@
 name: critical-thinking
 description: "Develop logical analysis skills - break down complex problems, identify root causes, test assumptions, evaluate evidence quality, build sound arguments. Use for problem analysis, decision-making, and validating business logic."
 allowed-tools: Write
-context: fork
-agent: Explore
-argument-hint: [problem-statement] [optional-context]
-user-invocable: true
+metadata:
+  version: "2.0"
+  claude-code:
+    context: fork
+    agent: Explore
+    user-invocable: true
 ---
 
 # Critical Thinking for BA

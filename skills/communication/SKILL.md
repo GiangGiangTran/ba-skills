@@ -2,10 +2,12 @@
 name: communication
 description: "Master BA communication - write clearly and persuasively, present effectively to different audiences, document decisions, facilitate discussions, influence without authority. Use for stakeholder updates, requirement documentation, and decision communication."
 allowed-tools: Write
-context: fork
-agent: Explore
-argument-hint: [audience-type] [communication-goal]
-user-invocable: true
+metadata:
+  version: "2.0"
+  claude-code:
+    context: fork
+    agent: Explore
+    user-invocable: true
 ---
 
 # Communication for BA

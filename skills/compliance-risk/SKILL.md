@@ -2,10 +2,12 @@
 name: compliance-risk
 description: "Master compliance and risk domain - understand regulatory requirements, data privacy, security risks, legal constraints, and business continuity. Use for identifying compliance needs, assessing risks, and building risk mitigation plans."
 allowed-tools: Write
-context: fork
-agent: Explore
-argument-hint: [industry-type] [compliance-question]
-user-invocable: true
+metadata:
+  version: "2.0"
+  claude-code:
+    context: fork
+    agent: Explore
+    user-invocable: true
 ---
 
 # Compliance & Risk for BA

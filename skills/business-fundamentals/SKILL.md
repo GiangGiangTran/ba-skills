@@ -2,10 +2,12 @@
 name: business-fundamentals
 description: "Master business domain knowledge - understand business models, unit economics, revenue mechanisms, metrics, profitability, financial analysis. Use for evaluating business cases, prioritizing features by business value, and understanding financial impact."
 allowed-tools: Write
-context: fork
-agent: Explore
-argument-hint: [business-type] [business-model]
-user-invocable: true
+metadata:
+  version: "2.0"
+  claude-code:
+    context: fork
+    agent: Explore
+    user-invocable: true
 ---
 
 # Business Fundamentals for BA

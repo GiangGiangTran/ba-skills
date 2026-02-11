@@ -2,10 +2,12 @@
 name: market-dynamics
 description: "Master market domain knowledge - understand competitive landscape, market trends, positioning, customer segments, go-to-market strategy, and market evolution. Use for evaluating market opportunity, competitive strategy, and positioning decisions."
 allowed-tools: Write
-context: fork
-agent: Explore
-argument-hint: [market-type] [competitive-question]
-user-invocable: true
+metadata:
+  version: "2.0"
+  claude-code:
+    context: fork
+    agent: Explore
+    user-invocable: true
 ---
 
 # Market Dynamics for BA

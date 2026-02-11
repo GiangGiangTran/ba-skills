@@ -2,10 +2,12 @@
 name: data-analysis
 description: "Master data-driven analysis - collect relevant data, analyze patterns, visualize findings, interpret results, support decisions with evidence. Use for validating assumptions, prioritizing features, and measuring success."
 allowed-tools: Write
-context: fork
-agent: Explore
-argument-hint: [analysis-question] [data-source-available]
-user-invocable: true
+metadata:
+  version: "2.0"
+  claude-code:
+    context: fork
+    agent: Explore
+    user-invocable: true
 ---
 
 # Data Analysis for BA

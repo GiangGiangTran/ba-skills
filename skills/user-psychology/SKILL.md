@@ -2,10 +2,12 @@
 name: user-psychology
 description: "Master user psychology domain - understand decision-making, cognitive biases, behavioral patterns, motivation, adoption barriers. Use for designing features users will love, reducing friction, and predicting user behavior."
 allowed-tools: Write
-context: fork
-agent: Explore
-argument-hint: [user-scenario] [optional-behavior]
-user-invocable: true
+metadata:
+  version: "2.0"
+  claude-code:
+    context: fork
+    agent: Explore
+    user-invocable: true
 ---
 
 # User Psychology for BA

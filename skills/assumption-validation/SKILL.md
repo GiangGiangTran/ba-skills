@@ -2,10 +2,12 @@
 name: assumption-validation
 description: "Master assumption validation - identify hidden assumptions, test whether they're true, find contradictions and risks. Use for validating risky assumptions before committing resources."
 allowed-tools: Read, Write
-context: fork
-agent: Explore
-argument-hint: [assumption-area] [optional-context]
-user-invocable: true
+metadata:
+  version: "2.0"
+  claude-code:
+    context: fork
+    agent: Explore
+    user-invocable: true
 ---
 
 # Assumption Validation for BA

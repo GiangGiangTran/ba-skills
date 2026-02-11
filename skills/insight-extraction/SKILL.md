@@ -2,10 +2,12 @@
 name: insight-extraction
 description: "Master insight extraction - dig deep into data to find root causes, hidden opportunities, and non-obvious implications. Use for deeper analysis that leads to breakthrough understanding."
 allowed-tools: Read, Write, Grep
-context: fork
-agent: Explore
-argument-hint: [data-source] [investigation-question]
-user-invocable: true
+metadata:
+  version: "2.0"
+  claude-code:
+    context: fork
+    agent: Explore
+    user-invocable: true
 ---
 
 # Insight Extraction for BA
