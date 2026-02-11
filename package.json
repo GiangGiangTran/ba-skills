@@ -1,0 +1,89 @@
+{
+  "name": "ba-skills",
+  "version": "1.0.0",
+  "description": "Professional Business Analyst Skills for Claude Code - Transform into an experienced BA with 5 comprehensive skills",
+  "keywords": [
+    "claude-code",
+    "business-analyst",
+    "ba",
+    "skills",
+    "babok",
+    "requirements",
+    "project-management",
+    "risk-assessment",
+    "stakeholder-management",
+    "ai-engineering"
+  ],
+  "author": "Your Name",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/your-username/ba-skills.git"
+  },
+  "homepage": "https://github.com/your-username/ba-skills",
+  "bugs": {
+    "url": "https://github.com/your-username/ba-skills/issues"
+  },
+  "skills": [
+    {
+      "name": "document-review",
+      "description": "Review BA documents for clarity, completeness, and traceability",
+      "version": "1.0.0"
+    },
+    {
+      "name": "requirement-analysis",
+      "description": "Analyze, prioritize, and estimate requirements",
+      "version": "1.0.0"
+    },
+    {
+      "name": "solution-design",
+      "description": "Design solution architecture and create implementation plans",
+      "version": "1.0.0"
+    },
+    {
+      "name": "risk-assessment",
+      "description": "Identify and mitigate project risks",
+      "version": "1.0.0"
+    },
+    {
+      "name": "stakeholder-mapping",
+      "description": "Plan stakeholder engagement and communication",
+      "version": "1.0.0"
+    }
+  ],
+  "scripts": {
+    "install": "chmod +x install.sh && ./install.sh",
+    "test": "echo 'Run: /requirement-analysis test-input.txt in Claude Code'",
+    "docs": "echo 'Documentation: See docs/ folder'"
+  },
+  "files": [
+    "skills/",
+    "docs/",
+    "install.sh",
+    "README.md",
+    "CONTRIBUTING.md",
+    "LICENSE",
+    ".gitignore",
+    "package.json"
+  ],
+  "engines": {
+    "node": ">=14.0.0"
+  },
+  "standards": [
+    "BABOK",
+    "PMBOK",
+    "IEEE 830",
+    "ISO 31000",
+    "Agile/Scrum"
+  ],
+  "metadata": {
+    "type": "claude-code-skills",
+    "category": "business-analysis",
+    "target": "ai-engineers-tech-leaders",
+    "production_ready": true,
+    "total_skills": 5,
+    "total_templates": 4,
+    "documentation_pages": 8,
+    "setup_time_minutes": 3
+  }
+}
